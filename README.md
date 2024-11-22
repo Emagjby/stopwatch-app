@@ -17,11 +17,14 @@ To run this project locally:
    ```bash
    git clone https://github.com/Emagjby/stopwatch-app.git
 2. Navigate to the project folder:
-   ```cd stopwatch-app
+   ```bash
+   cd stopwatch-app
 3. Install dependencies:
-   ```npm install
+   ```bash
+   npm install
 4. Start dev server:
-   ```npm start
+   ```bash
+   npm start
 
 ## Deployment
 This app is deployed on GitHub Pages using the gh-pages package. The deployment process automatically builds the app and pushes the build files to the gh-pages branch.
