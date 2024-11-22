@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Global Styles */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  background: linear-gradient(135deg, #3B1C32, #6A1E55); /* Gradient background */
+  font-family: 'Roboto', sans-serif; /* Font for the page */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Timer container */
+div#divTimer {
+  background: linear-gradient(135deg, #1A1A1D, #3B1C32); /* Gradient background for timer */
+  width: 350px;
+  height: 325px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 2.5px solid #A64D79; /* Border around the timer */
+  border-radius: 45px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Shadow for timer */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Timer hover effect */
+div#divTimer:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); /* Stronger shadow on hover */
+}
+
+/* Timer heading */
+h1#timer {
+  color: white;
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: 500; /* Bold and medium weight font */
+}
+
+/* Start/Stop button styles */
+button#startStopButton {
+  background: linear-gradient(135deg, #6A1E55, #9C2A6E); /* Gradient background */
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  width: 250px;
+  height: 60px;
+  border: 2.5px solid #A64D79; /* Border to match the timer */
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow for the button */
+  background-size: 200% 200%; /* Increase background area for gradient effect */
+  background-position: 0% 50%; /* Initial background position */
+  transition: background-position 0.5s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+/* Button hover effect */
+button#startStopButton:hover {
+  background-position: 100% 50%; /* Move the gradient to create hover effect */
+  transform: translateY(-3px); /* Slightly lift the button */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+/* Button active state */
+button#startStopButton:active {
+  transform: translateY(2px); /* Button presses down */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Restore shadow when pressed */
+}
+
+/* Remove outline on button focus */
+button#startStopButton:focus {
+  outline: none;
+}
+
+/* Media query for small screens */
+@media (max-width: 400px) {
+  div#divTimer {
+    width: 280px;
+    height: 300px;
+  }
+
+  h1#timer {
+    font-size: 36px;
+  }
+
+  button#startStopButton {
+    width: 220px;
+    height: 50px;
+    font-size: 28px;
+  }
+}
