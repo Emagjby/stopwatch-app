@@ -1,4 +1,4 @@
-# Stopwatch Application
+# Stopwatch Application `finished`
 
 A simple and visually appealing **React-based Stopwatch** application, hosted on GitHub Pages. This app demonstrates real-time updates, state management, and responsive design.
 
